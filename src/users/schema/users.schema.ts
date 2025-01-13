@@ -9,13 +9,7 @@ export class Users {
   name: string;
 
   @Prop({required: true, unique: true, lowercase: true})
-  userName: string;
-
-  @Prop({required: true, unique: true, lowercase: true})
   email: string;
-
-  @Prop({default: ""})
-  otp: number;
 
   @Prop()
   password: string;
